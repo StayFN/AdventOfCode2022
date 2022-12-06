@@ -8,7 +8,7 @@ foreach (var c in buffer)
 {
     if (markers.Count >= marker_size)
     {
-        if (markers.Distinct().Count() == marker_size)
+        if (markers.Distinct().Count() == markerSize)
         {
             Console.WriteLine($"Result: {index}");
             break;
