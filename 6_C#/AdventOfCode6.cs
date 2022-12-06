@@ -6,7 +6,7 @@ List<char> markers = new List<char>(); // List of markers
 
 foreach (var c in buffer)
 {
-    if (markers.Count >= marker_size)
+    if (markers.Count >= markerSize)
     {
         if (markers.Distinct().Count() == markerSize)
         {
