@@ -3,7 +3,6 @@
 #include <stdio.h>
 #include <string.h>
 
-
 #define BITS 100
 #define MAXCHAR 100
 
@@ -19,7 +18,6 @@ struct BITMAP
 {
 	unsigned value : 1;
 };
-
 
 int main()
 {
@@ -40,7 +38,6 @@ int main()
 		i++;
 	}
 	fclose(input_file);
-
 
 	//Construct Elf-Pairs 
 	struct elf_pairs my_elfpairs[1000];	
@@ -76,7 +73,6 @@ int main()
 		my_elfpairs[i].second_end = atoi(token);
 	}
 	
-
 	// Part 1 Get in how many assignment pairs one overlaps the other completely using if statements
 	int sum_fully_containing_pairs = 0;
 	for (size_t i = 0; i < sizeof(my_elfpairs) / sizeof(my_elfpairs[0]); i++)
@@ -113,7 +109,6 @@ int main()
 		{
 			bits_range_second_elf[j].value = 1;
 		}
-
 
         //Check if there is an overlap
 		for (size_t i = 0; i < BITS; i++)
