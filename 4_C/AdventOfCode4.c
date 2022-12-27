@@ -77,7 +77,7 @@ int main()
 	}
 	
 
-	// Part 1 Get how many assignment pairs does one overlap the other completely?
+	// Part 1 Get in how many assignment pairs one overlaps the other completely using if statements
 	int sum_fully_containing_pairs = 0;
 	for (size_t i = 0; i < sizeof(my_elfpairs) / sizeof(my_elfpairs[0]); i++)
 	{
@@ -89,7 +89,7 @@ int main()
 		}
 	}
 
-	//Part 2 Get how many assignment pairs overlap at all (overlap >= 1) BITMAP Approach
+	//Part 2 Get how many assignment pairs overlap at all (overlap >= 1) using BITMAP Approach
 	struct BITMAP bits_range_first_elf[BITS];
 	struct BITMAP bits_range_second_elf[BITS];
 	int sum_overlapping_pairs = 0;
